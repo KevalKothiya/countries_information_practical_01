@@ -23,7 +23,6 @@ class ApiHelper {
               capital: e['capital'] ?? [],
               languages: e['languages'] ?? {}))
           .toList());
-      print(info.length);
       return info;
     } else {
       return null;
