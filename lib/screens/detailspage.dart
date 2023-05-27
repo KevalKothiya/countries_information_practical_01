@@ -47,7 +47,7 @@ class _DetailsPageState extends State<DetailsPage> {
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Card(
@@ -77,7 +77,7 @@ class _DetailsPageState extends State<DetailsPage> {
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Card(
@@ -101,7 +101,7 @@ class _DetailsPageState extends State<DetailsPage> {
                 ],
               ),
             ),
-            Spacer(),
+            const Spacer(),
             Theme(
               data: ThemeData(
                 useMaterial3: true,
@@ -116,7 +116,7 @@ class _DetailsPageState extends State<DetailsPage> {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 50,
             ),
           ],
