@@ -53,7 +53,7 @@ class _HomePageState extends State<HomePage> {
                         },
                         icon: Icon(
                           Icons.arrow_forward_ios_rounded,
-                          color:Colors.primaries[i % 18].shade900,
+                          color: Colors.primaries[i % 18].shade900,
                         ),
                       ),
                       title: Text(data![i]!.countries.toString()),
@@ -65,7 +65,9 @@ class _HomePageState extends State<HomePage> {
               );
             } else {
               return const Center(
-                child: CupertinoActivityIndicator(),
+                child: CupertinoActivityIndicator(
+                  radius: 25,
+                ),
               );
             }
           },
