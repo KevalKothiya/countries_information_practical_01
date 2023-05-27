@@ -9,20 +9,24 @@ class ApiHelper {
   static ApiHelper apiHelper = ApiHelper._();
 
   Future<List<Info>?> fetchdata() async {
-
     String url = "https://restcountries.com/v3.1/all";
 
     http.Response res = await http.get(Uri.parse(url));
 
-    if (res.statusCode == 200){
-          List decodedData = jsonDecode(res.body);
+    if (res.statusCode == 200) {
+      List decodedData = jsonDecode(res.body);
 
-          List<Info> info = (decodedData.map((e) => Info.formMap(common: e['name']['common'], population: e['population'], capital: e['capital'] ?? [], languages: e['languages'] ?? {})).toList());
-          print(info.length);
-          return info;
-        }
-        else{
-          return null;
-        }
+      List<Info> info = (decodedData
+          .map((e) => Info.formMap(
+              common: e['name']['common'],
+              population: e['population'],
+              capital: e['capital'] ?? [],
+              languages: e['languages'] ?? {}))
+          .toList());
+      print(info.length);
+      return info;
+    } else {
+      return null;
+    }
   }
 }
