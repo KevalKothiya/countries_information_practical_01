@@ -1,16 +1,17 @@
-# info
+# Fetch information about different countries, such as population, capital, and languages, from a country information API.
 
-A new Flutter project.
 
-## Getting Started
+## Project OutPut :
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+<p>
+<img align="left" src="https://github.com/KevalKothiya/countries_information_practical_01/assets/131429045/a80ff23f-0451-4785-b9bf-207cccc0d50a" width="220px">
+<img src="https://github.com/KevalKothiya/countries_information_practical_01/assets/131429045/4a43a477-255c-42ee-a75c-aa38b8ec5251" width="220px">
+ </p>
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+<p>
+  
+<img src="https://github.com/KevalKothiya/countries_information_practical_01/assets/131429045/fc2db6be-9476-465b-a6da-c5b4c39cf6b0" width="220px">
+<img align="left" src="https://github.com/KevalKothiya/countries_information_practical_01/assets/131429045/6fcece92-ca61-4c13-b264-ab7bcef4c98c" width="220px">
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<p>
