@@ -22,8 +22,8 @@ class _DetailsPageState extends State<DetailsPage> {
         padding: const EdgeInsets.all(16),
         child: Column(
           children: [
-            ElevatedButton(onPressed: null, child: Text(data.countries)),
             Card(
+              elevation: 5,
               child: Row(
                 children: [
                   const Expanded(
@@ -41,13 +41,17 @@ class _DetailsPageState extends State<DetailsPage> {
                   ),
                   ...data.capital
                       .map(
-                        (e) => Text(e),
+                        (e) => Text("${e} "),
                       )
                       .toList()
                 ],
               ),
             ),
+            SizedBox(
+              height: 10,
+            ),
             Card(
+              elevation: 5,
               child: Row(
                 children: [
                   const Expanded(
@@ -66,15 +70,18 @@ class _DetailsPageState extends State<DetailsPage> {
                         Text(
                           e.toString(),
                         ),
-                        const Text(","),
+                        const Text(", "),
                       ],
                     ),
                   ),
                 ],
               ),
             ),
-
+            SizedBox(
+              height: 10,
+            ),
             Card(
+              elevation: 5,
               child: Row(
                 children: [
                   const Expanded(
@@ -89,14 +96,12 @@ class _DetailsPageState extends State<DetailsPage> {
                     ),
                   ),
                   Text(
-                    data.population.toString(),
+                    "${data.population} ",
                   ),
                 ],
               ),
             ),
-            const SizedBox(
-              height: 30,
-            ),
+            Spacer(),
             Theme(
               data: ThemeData(
                 useMaterial3: true,
@@ -111,8 +116,9 @@ class _DetailsPageState extends State<DetailsPage> {
                 ),
               ),
             ),
-            // Text(language.toString()),
-            // Text(Round2.toString()),
+            SizedBox(
+              height: 50,
+            ),
           ],
         ),
       ),
